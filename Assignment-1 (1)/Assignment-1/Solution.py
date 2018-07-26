@@ -5,23 +5,23 @@
 
 
 def factorial(number):
-	'''
-	n is positive Integer
+    '''
+    n is positive Integer
 
-	returns: a positive integer, the factorial of n.
-	'''
-	# Your code here
-	if number == 0:
-		return 1
-	return number * factorial(number - 1)
-	
+    returns: a positive integer, the factorial of n.
+    '''
+    # Your code here
+    if number == 0:
+        return 1
+    return number * factorial(number - 1)
+    
 
 
 def main():
-	data = input()
-	for _ in range(int(data)):
-		user_input = input()
-		print(factorial(int(user_input)))	
+    data = input()
+    for _ in range(int(data)):
+        user_input = input()
+        print(factorial(int(user_input)))   
 
-if __name__== "__main__":
-	main()
+if __name__ == "__main__":
+    main()
