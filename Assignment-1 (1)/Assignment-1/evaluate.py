@@ -21,8 +21,9 @@ f.write("number of testcases passed: " + str(cases) + "/" + str(totalcases) + "\
 f.close() 
 path = os.getcwd().split('\\')
 folder = path[-1]
+
 runProcess("git status")
 runProcess("git add .")
-runProcess("git commit -m \""+ folder +"number of testcases passed: " + str(cases) + "/" + str(totalcases) + " and pylint score: " + str(score) + "/" + str(totalscore) + " \"")
+runProcess("git commit -m \""+ folder +" -> number of testcases passed: " + str(cases) + "/" + str(totalcases) + " and pylint score: " + str(score) + "/" + str(totalscore) + " \"")
 if cases == totalcases:
 	runProcess("git push -u origin master")
