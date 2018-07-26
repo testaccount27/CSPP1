@@ -18,10 +18,10 @@ def factorial(n):
 
 
 def main():
-	data=input()
-	for i in range(int(data)):
-		a = input()
-		print(factorial(int(a)))	
+	data = input()
+	for _ in range(int(data)):
+		user_input = input()
+		print(factorial(int(user_input)))	
 
 if __name__== "__main__":
 	main()
